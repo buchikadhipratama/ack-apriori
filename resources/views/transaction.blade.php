@@ -57,7 +57,7 @@
                                                 @endfor
                                         </td>
                                         <td>{{ $totalProduct }}</td>
-                                        <td>{{ $transaction[$i]->total_price }}</td>
+                                        <td>Rp. {{ number_format($transaction[$i]->total_price) }}</td>
                                         <td>{{ date_format($transaction[$i]->created_at, 'd-m-Y H:i') }}</td>
                                         </tr>
                                         @endfor

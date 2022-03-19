@@ -56,7 +56,9 @@
                                         <td>{{ $product[$i]->category->name }}</td>
                                         <td>{{ $product[$i]->variant->name }}</td>
                                         <td>{{ $product[$i]->stock }}</td>
-                                        <td>{{ $product[$i]->price }}</td>
+                                        <td>
+                                            Rp. {{ number_format($product[$i]->price) }}
+                                        </td>
                                         <td class="text-center"> <span class="badge badge-pill bg-success inv-badge">INACTIVE</span> </td>
                                         </tr>
                                         @endfor
