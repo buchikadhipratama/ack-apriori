@@ -23,11 +23,12 @@
                 <div class="card card-table flex-fill">
                     <div class="card-header">
                         <h4 class="card-title float-left mt-2">Daftar Semua Produk</h4>
-                        <button type="button" class="btn btn-primary float-right veiwbutton">View All</button>
+                        <button type="button" class="btn btn-primary float-right veiwbutton">
+                            <span class="fas fa-plus"> </span> Tambah Produk Baru</button>
                     </div>
                     <div class="card-body m-2">
                         <div class="table-responsive">
-                            <table id="daftarProduk" class="display table-bordered">
+                            <table id="daftarProduk" class="display table-bordered text-center">
                                 <thead>
                                     <tr>
                                         <th>No</th>

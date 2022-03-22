@@ -31,7 +31,7 @@
                                 <thead>
                                     <tr>
                                         <th>No</th>
-                                        <th>Product</th>
+                                        <th style="width:50%">Product</th>
                                         <th>Jumlah Total</th>
                                         <th>Total Harga</th>
                                         <th>Tanggal Transaksi</th>
@@ -43,7 +43,7 @@
                                         @php
                                         $totalProduct = 0
                                         @endphp
-                                        <td>{{ $i+1 }}</td>
+                                        <td class="text-center">{{ $i+1 }}</td>
                                         <td>
                                             @for ($j = 0; $j < count($transaction[$i]->item); $j++)
                                                 @php
@@ -56,7 +56,7 @@
                                                 ({{ $transaction[$i]->item[$j]->count }})
                                                 @endfor
                                         </td>
-                                        <td>{{ $totalProduct }}</td>
+                                        <td class="text-center">{{ $totalProduct }}</td>
                                         <td>Rp. {{ number_format($transaction[$i]->total_price) }}</td>
                                         <td>{{ date_format($transaction[$i]->created_at, 'd-m-Y H:i') }}</td>
                                         </tr>

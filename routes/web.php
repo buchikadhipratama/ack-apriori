@@ -20,4 +20,4 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [App\Http\Controllers\DashboardController::class, 'index'])->name('dashboard');
 Route::get('/produk', [App\Http\Controllers\ProductController::class, 'product'])->name('/produk');
 Route::get('/transaksi', [App\Http\Controllers\ProductController::class, 'transaction'])->name('/transaksi');
-Route::get('/kasir', [App\Http\Controllers\DashboardController::class, 'index'])->name('/kasir');
+Route::get('/kasir', [App\Http\Controllers\SaleController::class, 'index'])->name('/kasir');
