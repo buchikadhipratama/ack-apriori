@@ -29,8 +29,8 @@
     <div class="main-wrapper">
         <div class="header">
             <div class="header-left">
-                <a href="index.html" class="logo"> <img src="{{ URL::to('assets/img/sent.png') }}" width="50" height="70" alt="logo"> <span class="logoclass">ACK</span> </a>
-                <a href="index.html" class="logo logo-small"> <img src="{{ URL::to('assets/img/sent.png') }}" alt="Logo" width="30" height="30"> </a>
+                <a href="index.html" class="logo"> <img src="{{ URL::to('assets/img/favicon.png') }}" width="50" height="70" alt="logo"> <span class="logoclass">Fried Chicken</span> </a>
+                <a href="index.html" class="logo logo-small"> <img src="{{ URL::to('assets/img/favicon.png') }}" alt="Logo" width="30" height="30"> </a>
             </div>
             <a href="javascript:void(0);" id="toggle_btn"> <i class="fe fe-text-align-left"></i> </a>
             <a class="mobile_btn" id="mobile_btn"> <i class="fas fa-bars"></i> </a>
@@ -61,7 +61,7 @@
         @yield('menu')
         @yield('content')
     </div>
-    <script data-cfasync="false" src="../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    {{-- <script data-cfasync="false" src="../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script> --}}
     <script src="{{ URL::to('assets/js/jquery-3.5.1.min.js') }}"></script>
     <script src="{{ URL::to('assets/js/popper.min.js') }}"></script>
     <script src="{{ URL::to('assets/js/bootstrap.min.js') }}"></script>
@@ -70,9 +70,9 @@
     <script src="{{ URL::to('assets/js/moment.min.js') }}"></script>
     <script src="{{ URL::to('assets/js/bootstrap-datetimepicker.min.js') }}"></script>
     <script src="{{ URL::to('assets/js/script.js') }}"></script>
-    <script src="{{ URL::to('assets/js/moment.min.js') }}"></script>
-    <script src="{{ URL::to('assets/plugins/morris/morris.min.js') }}"></script>
-    <script src="{{ URL::to('assets/js/chart.morris.js') }}"></script>
+    {{-- <script src="{{ URL::to('assets/js/moment.min.js') }}"></script> --}}
+    {{-- <script src="{{ URL::to('assets/plugins/morris/morris.min.js') }}"></script> --}}
+    {{-- <script src="{{ URL::to('assets/js/chart.morris.js') }}"></script> --}}
     <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
 
 

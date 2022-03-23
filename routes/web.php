@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\SaleController;
+use App\Http\Controllers\ProductController;
+use App\Http\Controllers\DashboardController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,7 +20,11 @@ use Illuminate\Support\Facades\Route;
 //     return view('dashboard.home')->name('home');
 // });
 
-Route::get('/', [App\Http\Controllers\DashboardController::class, 'index'])->name('dashboard');
-Route::get('/produk', [App\Http\Controllers\ProductController::class, 'product'])->name('/produk');
-Route::get('/transaksi', [App\Http\Controllers\ProductController::class, 'transaction'])->name('/transaksi');
-Route::get('/kasir', [App\Http\Controllers\SaleController::class, 'index'])->name('/kasir');
+Route::get('/', [DashboardController::class, 'index'])->name('dashboard');
+Route::get('/produk', [ProductController::class, 'product'])->name('/produk');
+Route::get('/produk/hapus/{id}', [ProductController::class, 'delete']);
+Route::get('/product/detail/{id}', [ProductController::class, 'edit']);
+Route::post('product/edit', [ProductController::class, 'editProduct']);
+
+Route::get('/transaksi', [ProductController::class, 'transaction'])->name('/transaksi');
+Route::get('/kasir', [SaleController::class, 'index'])->name('/kasir');

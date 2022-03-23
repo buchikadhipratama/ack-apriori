@@ -17,7 +17,8 @@ class DashboardController extends Controller
     {
         $product = Product::all()->count();
         $transaction = Transaction::all()->count();
-        return view('dashboard.home', compact('product', 'transaction'));
+        $disable = Product::where('status','=',0)->get();
+        return view('dashboard.home', compact('product', 'transaction','disable'));
     }
 
     /**
